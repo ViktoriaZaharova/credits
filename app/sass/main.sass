@@ -1,0 +1,1097 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  color: $text
+  background: #fff
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  transition: .3s ease
+  text-decoration: none
+  outline: none
+
+  &:hover, &:focus
+    text-decoration: none
+    outline: none
+
+input, select, textarea, .form-control
+  width: 100%
+  outline: none
+  box-shadow: none
+  box-sizing: border-box
+  border: none
+    radius: 5px
+  font-family: $default-font
+  font-size: 17px
+  transition: .3s ease
+  height: 50px
+  padding: 0 15px
+  color: #a9a9a9
+
+  &::placeholder
+    color: #a9a9a9
+
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+input.font-500
+  font-weight: 500
+  color: #212121
+
+  &::placeholder
+    color: #212121
+
+
+.form-text
+  margin: 14px 0 0 0
+  padding: 0 0 0 15px
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  color: #a9a9a9
+
+  .links
+    display: inline
+    text-decoration: none
+    margin: 0 0 0 4px
+
+label
+  display: block
+
+button
+  outline: none
+  box-shadow: none
+  box-sizing: border-box
+  border: none
+  cursor: pointer
+  transition: .3s ease
+
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 5px
+  font-size: 17px
+  font-weight: 500
+  padding: 0
+  transition: .3s ease
+
+.btn-accent
+  width: 198px
+  height: 40px
+  border: solid 1px #4e79ff
+  background-color: #4e79ff
+  text-align: center
+  color: #fff
+
+  &:hover
+    background: #595959
+    color: #fff
+
+.btn-white
+  background: #fff
+  color: $accent
+  width: 129px
+  height: 40px
+
+  &:hover
+    background: #595959
+    color: #fff
+
+.btn-border
+  border: solid 1px #4e79ff
+  width: 253px
+  height: 40px
+  color: $accent
+
+  &:hover
+    background: $accent
+    color: #fff
+
+.btn-border-white
+  border: solid 1px #ffffff
+  width: 254px
+  height: 40px
+  color: #fff
+  &:hover
+    background: #ffffff
+    color: $accent
+
+.w-100
+  width: 100%
+
+.bg-grey
+  background: #efefef
+
+.bg-blue
+  background: $accent
+  color: #fff
+  h2, h1
+    color: #fff
+
+.btn-white__two
+  width: 273px
+  height: 48px
+  background-color: #ffffff
+  font-size: 20px
+  color: #000
+
+  &:hover
+    background: $accent
+    color: #fff
+
+h1
+  font-size: 40px
+  font-weight: bold
+  color: $text
+
+h2
+  font-size: 30px
+  font-weight: bold
+  color: $text
+
+.description
+  font-size: 20px
+  font-weight: 500
+  color: #595959
+  margin: 10px 0 0 0
+
+.color-white
+  color: #fff
+
+.bg-black
+  background-image: linear-gradient(to top, #000000, #292929)
+
+
+.links
+  color: $accent
+  text-decoration: underline
+
+  &:hover
+    text-decoration: none
+    color: $text
+
+.list-check
+  color: #595959
+  font-size: 20px
+
+  padding: 0 0 0 59px
+  margin: 50px 0
+
+  li
+    position: relative
+    padding: 0 0 0 23px
+    margin: 0 0 12px
+
+    &:last-child
+      margin: 0
+
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 5px
+      background: url("../img/check-grey.png") no-repeat center
+        size: contain
+      width: 16px
+      height: 11px
+
+.list-check__white
+  color: #fff
+
+  li
+    &:before
+      filter: brightness(0) invert(1)
+
+.p-70
+  padding: 70px 0
+
+.pl-100
+  padding: 0 0 0 100px
+
+.pl-70
+  padding: 0 0 0 70px
+
+.p-30
+  padding: 30px 0
+
+.container
+  max-width: 1230px
+
+//header
+header
+  padding: 17px 0 8px
+  position: absolute
+  left: 0
+  top: 0
+  z-index: 7
+  width: 100%
+
+  .dropdown-menu
+    border: none
+      radius: 5px
+    box-shadow: 0 0 32.6px 2.5px rgba(0, 0, 0, 0.13)
+    border: solid 1px rgba(89, 89, 89, 0.38)
+    background-color: #ffffff
+
+.navbar-toggler
+  padding: 0
+  border: none
+  width: 20px
+  height: 15px
+  box-shadow: none
+  box-sizing: border-box
+  margin: 0 0 0 20px
+  display: none
+
+  span
+    display: block
+    width: 100%
+    background: $text
+    height: 2px
+    border-radius: 2px
+    margin: 0 0 3px
+
+    &:last-child
+      margin: 0
+
+.navbar
+  padding: 0
+
+  .nav-item
+    padding: 5px
+    border-radius: 5px
+
+  .dropdown-menu
+    padding: 40px 40px 4px
+    min-width: 260px
+    margin: 23px 0 0 0
+
+  .show
+    .dropdown-menu
+      left: 50%
+      transform: translateX(-50%)
+
+  .show.dropdown
+    background: $accent
+
+    .nav-link
+      color: #fff
+
+    .dropdown-toggle::after
+      filter: brightness(0) invert(1)
+
+  .dropdown-item
+    padding: 0
+    max-width: 113px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    color: #595959
+    font-size: 11px
+    white-space: normal
+    width: 100%
+
+    &:hover
+      background: transparent
+      color: $accent
+
+      .dropdown-item__title
+        color: $accent
+
+    .dropdown-item__title
+      color: #212121
+      font-size: 16px
+      font-weight: 500
+      transition: .3s ease
+      width: 100%
+
+  .dropdown-item.w-100
+    max-width: none
+
+.dropdown-menus
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+
+  .line
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.dropdown-menu
+  min-width: auto
+
+.dropdown-item__wrap
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  margin: 0 48px 39px 0
+  min-width: 160px
+
+  &:last-child
+    margin-right: 0
+
+.dropdown-item__icon
+  margin: 0 15px 0 0
+  width: 30px
+  min-width: 30px
+
+
+.nav-link, .navbar-expand-md .navbar-nav .nav-link
+  padding: 0
+
+.nav-link
+  font-size: 19px
+  font-weight: 500
+  color: $accent
+
+.nav-item
+  margin: 0 20px 0 0
+
+  &:last-child
+    margin: 0
+
+.dropdown-toggle::after
+  width: 12px
+  height: 6px
+  background: url("../img/down-arrow.png") no-repeat center
+    size: contain
+  border: none
+  vertical-align: middle
+  margin-left: 4px
+
+.language
+  margin: 0 0 0 31px
+
+  .nav-link, .dropdown-item
+    display: flex
+    align-items: center
+
+    .icon
+      width: 30px
+      margin: 0 7px 0 0
+
+.header-box
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  flex-wrap: wrap
+  height: 100%
+
+//main
+main
+  padding: 125px 0 0
+  position: relative
+  overflow: hidden
+
+.main-content
+  p
+    font-size: 20px
+    font-weight: 500
+
+    a
+      display: inline
+
+  .btn
+    margin: 46px auto 50px
+    width: 179px
+    height: 48px
+
+.main-image
+  margin: 90px 0 -175px -30px
+
+
+//credit-debits
+.credit-debits
+  padding: 50px 0 30px
+
+.credit-debits__image
+  display: flex
+  align-items: center
+  justify-content: center
+
+.credit-debits__content
+  .btn
+    margin: 0 0 0 58px
+
+//credit-staible
+.credit-staible
+  padding: 70px 0
+
+  .btn
+    width: 129px
+    margin: 0 0 0 58px
+
+  .list-check
+    margin: 30px 0 46px
+
+.credit-staible__image
+  margin: 20px 0 0 0
+
+//staking
+.staking-content
+  max-width: 445px
+  margin: 0 auto
+
+  h2, .description
+    text-align: center
+
+  .list-check
+    padding: 0 0 0 20px
+    margin: 50px 0 46px
+
+  .btn
+    margin: 0 auto
+
+//buy-credits
+.buy-credits__content
+  .btn
+    margin: 0 0 0 56px
+
+  .list-check
+    margin: 55px 0 46px
+
+.image-group
+  display: flex
+  align-items: center
+  margin: 56px 0 0 56px
+
+  .img-card
+    margin: 0 16px 0 0
+
+    &:last-child
+      margin: 0
+
+.purchase-credits
+  max-width: 570px
+  width: 100%
+  margin: 0 0 0 auto
+  background: #efefef
+  border-radius: 5px
+  padding: 20px
+
+  h3
+    font-size: 20px
+    color: #13191c
+    text-align: center
+    margin: 0 auto 40px
+
+form
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+
+  .form-group
+    max-width: 255px
+    width: 100%
+    position: relative
+    margin: 0 0 40px
+
+    label
+      margin: 0 0 14px
+      padding: 0 0 0 15px
+      font-size: 17px
+      color: #212121
+
+  .w-100
+    max-width: none
+
+  button
+    margin: 13px auto 0
+
+.input-group
+  width: 100%
+  position: relative
+
+.input-group__it
+  position: absolute
+  right: 0
+  top: 50%
+  transform: translate(0, -50%)
+  width: 85px
+  background: #f7f7f7
+  height: 100%
+  display: flex
+  align-items: center
+  text-transform: uppercase
+  justify-content: center
+  color: #595959
+  font-size: 17px
+  z-index: 2
+
+  .dropdown-menu
+    margin: 0
+    left: 0 !important
+    top: 100% !important
+    transform: none !important
+    width: 100%
+    min-width: auto
+    border-radius: 0
+    padding: 0
+
+  .nav-link
+    font-weight: normal
+    color: #595959
+
+    &:after
+      background: url("../img/down-arrow-grey.png") no-repeat center
+        size: contain
+
+.buy-credits__content
+  height: 100%
+  display: flex
+  justify-content: center
+  flex-direction: column
+
+
+//revolution
+.revolution
+  padding: 30px 0 50px
+
+  .btn
+    margin: 0 0 0 56px
+    width: 159px
+
+  .list-check
+    padding: 0 0 0 40px
+    margin: 50px 0 45px
+
+.revolution-image
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: space-between
+  height: 100%
+
+//credits-decentralized
+.credits-decentralized
+  padding: 50px 0 30px
+
+  .list-check
+    margin: 50px 0 33px
+
+  .btn
+    margin: 0 0 0 56px
+
+//partnerships
+.partnerships
+  padding: 70px 0 100px
+
+  h2
+    margin: 0 auto 69px
+
+  .btn
+    margin: 0 auto
+    width: 147px
+
+.partnerships-box
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  font-size: 15px
+  color: #595959
+  margin: 0 0 46px
+
+.partnerships-logo
+  min-height: 40px
+  margin: 0 0 33px
+
+//news
+.news
+  padding: 0 0 40px
+
+  h2
+    margin: 0 auto 50px
+
+.news-box
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  margin: 0 0 30px
+  font-size: 20px
+
+.news-image
+  width: 100%
+  height: 170px
+  border-radius: 5px
+  background-color: #efefef
+  margin: 0 0 12px
+  overflow: hidden
+
+.date
+  font-size: 15px
+  color: #595959
+
+//footer
+footer
+  h3
+    font-size: 20px
+    margin: 0 0 10px
+
+.footer-menu
+  li
+    margin: 0 0 8px
+
+    &:last-child
+      margin: 0
+
+    a
+      color: $accent
+      font-size: 20px
+
+      &:hover
+        color: #000
+
+.footer-bottom
+  padding: 25px 0
+  background: #d4d4d4
+  font-size: 20px
+  color: #212121
+
+.footer-top
+  padding: 50px 0 18px
+  background: #e1e1e1
+
+.footer-box__wrapper
+  padding: 0 0 0 30px
+  display: flex
+  align-items: flex-start
+
+  .logo
+    width: 41px
+    height: 40px
+    margin: 0 29px 0 0
+
+.list-social
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  margin: 20px 0 0 0
+
+  li
+    margin: 0 30px 0 0
+
+    &:last-child
+      margin: 0
+
+    a
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin: 0 0 32px
+      font-size: 15px
+      color: $accent
+      width: 71px
+
+      .text
+        margin: 11px auto 0
+
+.footer-box__social
+  padding: 0 0 0 70px
+
+  h3
+    padding: 0 0 0 10px
+
+
+//credits 2
+header.color-white
+  .nav-link
+    color: #fff
+
+    &:after
+      background: url("../img/down-arrow-white.png") no-repeat center
+        size: contain
+
+  .navbar-toggler
+    span
+      background: #fff
+
+.main-credits__two
+  h1, p
+    color: #fff
+
+  .btn
+    width: 273px
+    height: 48px
+
+  .main-content
+    padding: 0 165px 0 100px
+
+  .main-image
+    margin: 50px 0 -124px -30px
+
+.credits-wallet
+  padding: 30px 0
+
+  .description
+    margin: 10px auto 50px
+
+.credits-wallet__box
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: left
+  color: #595959
+  font-size: 20px
+  margin: 0 0 30px
+
+  h3
+    font-weight: bold
+    font-size: 25px
+    margin: 0 0 10px
+
+.credits-wallet__content
+  margin: 20px auto 0
+  max-width: 225px
+  width: 100%
+
+.grate-benefit
+  padding: 30px 0 0
+
+.global-payment__image
+  display: flex
+  align-items: center
+  justify-content: center
+
+.global-payment
+  .list-check
+    margin: 50px 0 0 0
+
+.characteristics
+  h2
+    margin: 0 0 50px
+
+.characteristics-box
+  margin: 0 0 64px
+
+.characteristics-box__content
+  margin: 19px 0 0 0
+  max-width: 145px
+  color: #595959
+  font-size: 20px
+
+  h3
+    margin: 0 0 10px
+    font-size: 25px
+    font-weight: bold
+
+
+//credits 3
+.main-credits__three
+  h1
+    max-width: 385px
+    width: 100%
+
+  .btn
+    margin: 46px 0 50px 80px
+    width: 223px
+  .main-image
+    margin: 0 auto
+
+.section-advantages
+  padding: 50px 0 0
+
+.advantages-box
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  color: #595959
+  font-size: 20px
+  margin: 0 auto 76px
+  h3
+    font-size: 25px
+    font-weight: 500
+    margin: 0 auto 10px
+
+.advantages-box__content
+  max-width: 308px
+  width: 100%
+  margin: 20px auto 0
+
+//main-credits__four
+.main-credits__four
+  .description
+    font-size: 20px
+  .main-image
+    margin: 0 auto
+    height: 100%
+    display: flex
+    justify-content: flex-start
+    align-items: center
+  .button-group
+    margin: 0 0 113px
+
+.button-group
+  width: 100%
+  display: flex
+  align-items: center
+  padding: 0 0 0 60px
+  .btn
+    margin: 0 25px 0 0
+    width: 186px
+    &:last-child
+      margin: 0
+      width: 165px
+  
+.main-credits__box
+  margin: 0 0 49px
+  color: #595959
+  font-size: 15px
+  h3
+    font-weight: bold
+    color: #212121
+    font-size: 20px
+  p
+    margin: 10px 0
+  .links
+    font-weight: 500
+    font-size: 20px
+
+//section-credits
+.section-credits
+  h4
+    font-size: 30px
+    font-weight: bold
+    margin: 55px 0 46px
+    padding: 0 0 0 59px
+  .credit-debits__image
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+
+//useful-services
+.useful-services
+  padding: 70px 0 20px
+  h2
+    margin: 0 auto 58px
+
+.useful-services__box
+  display: flex
+  align-items: center
+  color: #595959
+  font-size: 20px
+  margin: 0 0 50px
+  h3
+    color: #595959
+    font-size: 30px
+    margin: 0 0 5px
+    font-weight: bold
+
+.useful-services__icon
+  width: 38px
+  min-width: 38px
+  margin: 0 31px 0 0
+
+//for-developers
+.for-developers
+  padding: 30px 0 0
+  h2
+    margin: 0 auto 50px
+  .credits-wallet__box
+    align-items: flex-start
+    font-size: 15px
+    h3
+      font-size: 20px
+
+
+//main-credits__five
+.main-credits__five
+
+  .main-image
+    margin: 0 auto
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+
+
+.section-advantages__two
+  padding: 30px 0 0
+
+.advant-box
+  display: flex
+  flex-direction: column
+  max-width: 240px
+  font-size: 20px
+  margin: 0 0 30px
+  h3
+    font-size: 25px
+    font-weight: bold
+    margin: 0 0 10px
+
+.advant-box__icon
+  margin: 0 auto 20px
+
+//useful-links
+.useful-links
+  padding: 100px 0 63px
+  .list-check
+    margin: 22px 0 0
+    padding: 0 0 0 40px
+    .links
+      display: inline
+
+.section-advantages__three
+  padding: 50px 0 0
+  .advant-box__icon
+    margin: 0 0 22px
+  .advant-box
+    align-items: flex-start
+    color: #595959
+    font-size: 15px
+    h3
+      color: #212121
+      font-size: 20px
+      font-weight: bold
+
+//.credits-stable
+.credits-stable
+  .btn
+    width: 129px
+    height: 40px
+    margin: 0 auto
+
+
+.credits-stable__content
+  margin: 50px auto 46px
+  max-width: 780px
+  width: 100%
+  color: #595959
+  font-size: 20px
+  font-weight: 500
+  p
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+
+
+.accordion
+  margin: 49px 0 0
+  .card
+    .card-header
+      margin: 0
+
+.card-header
+  padding: 0
+  border: none
+  background: transparent
+  font-size: 25px
+  color: $accent
+  font-weight: bold
+  margin: 0
+  button
+    font-size: 25px
+    font-weight: bold
+  &:hover, &:focus
+    button
+      text-decoration: none
+      color: #000
+
+
+.card
+  background: transparent
+  border: none
+    radius: 0
+  margin: 0 0 40px
+  &:last-child
+    margin: 0
+
+.card-body
+  color: #595959
+  font-size: 20px
+  max-width: 600px
+  width: 100%
+  padding: 0 0 0 50px
+
+
+@import "media"
+// Всегда в конце
