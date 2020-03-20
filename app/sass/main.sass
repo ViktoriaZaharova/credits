@@ -157,6 +157,9 @@ button
   font-weight: 500
   padding: 0
   transition: .3s ease
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
 
 .btn-accent
   width: 198px
@@ -1551,6 +1554,99 @@ header.color-white
     margin: 50px 0 0
     .image
       margin: 0 87px 0 0
+
+.nav-pills
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  width: 100%
+  .nav-item
+    padding: 0
+    margin: 0 0 -1px 0
+    background: transparent
+  .nav-link
+    padding: 0 10px 25px
+    color: #212121
+    font-size: 16px
+    font-weight: bold
+    border:
+      bottom: 1px solid transparent
+      radius: 0
+
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link
+  background: transparent
+  color: #212121
+  border-color: #212121
+
+.tabs-wrapper__nav
+  border-bottom: 1px solid #d4d4d4
+
+.tabs-content
+  padding: 50px 100px 0 0
+  font-size: 18px
+  color: #212121
+  .text
+    margin: 0 0 30px
+    &:last-child
+      margin: 0
+  h6
+    font-weight: 500
+    margin: 0 0 20px
+
+.tabs-wrapper
+  margin: 0 0 50px
+
+.modal-content
+  box-shadow: 0 0 79px 0 rgba(0, 4, 7, 0.1)
+  border: none
+    radius: 0
+  margin: 0 auto
+  background: #efefef
+  padding: 50px 0
+  color: #595959
+  font-size: 20px
+  .modal-header, .modal-body
+    max-width: 370px
+    width: 100%
+    margin: 0 auto
+    padding: 0
+    border: none
+    position: relative
+    display: flex
+    flex-direction: column
+  .close
+    width: 17px
+    height: 17px
+    padding: 0
+    right: 0
+    top: 0
+    position: absolute
+    box-sizing: border-box
+    margin: 0
+    opacity: 1
+  .modal-body
+    padding: 40px 0 0
+  form
+    .form-group
+      max-width: none
+    button
+      width: 167px
+      height: 48px
+      margin: 0 auto
+
+
+
+.modal-title
+  font-size: 30px
+  font-weight: bold
+  color: #212121
+
+.modal-dialog
+  max-width: none
+
+
 
 
 
