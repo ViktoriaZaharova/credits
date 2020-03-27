@@ -423,6 +423,34 @@
   .custom-select
     width: 220px
 
+  //новые стили по правкам
+  .btn-close-menu
+    display: flex
+    align-items: center
+    justify-content: center
+    border: 1px solid #000
+      radius: 50%
+    width: 30px
+    height: 30px
+    margin: 0 0 10px auto
+    position: relative
+    span
+      border-radius: 2px
+      width: 15px
+      height: 1px
+      display: inline-block
+      background: #000
+      position: absolute
+
+      &:first-child
+        transform: rotate(135deg)
+        top: 13px
+        left: 6px
+      &:last-child
+        transform: rotate(40deg)
+        top: 13px
+        right: 6px
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 585px)
@@ -536,4 +564,9 @@
 
   .modal-content
     padding: 30px 10px
+
+    //новый блок
+  .mobile-wallet__box
+    max-width: none
+//новый блок
 

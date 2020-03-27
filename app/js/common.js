@@ -1,3 +1,3 @@
-$(document).ready(function() {
-    console.log( "ready!" );
+$('.btn-close-menu').click(function () {
+    $('.navbar-collapse').collapse('hide');
 });

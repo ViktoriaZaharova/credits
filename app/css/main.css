@@ -1829,6 +1829,98 @@ header.color-white .navbar-toggler span {
 .modal-dialog {
   max-width: none; }
 
+.btn-close-menu {
+  display: none; }
+
+.navbar .dropdown-menu__blockchain {
+  overflow: hidden;
+  padding: 0; }
+  .navbar .dropdown-menu__blockchain .dropdown-item__wrap {
+    margin: 0;
+    width: 100%; }
+    .navbar .dropdown-menu__blockchain .dropdown-item__wrap .dropdown-item {
+      padding: 10px 30px; }
+      .navbar .dropdown-menu__blockchain .dropdown-item__wrap .dropdown-item:hover {
+        background: #4e79ff;
+        color: #fff; }
+        .navbar .dropdown-menu__blockchain .dropdown-item__wrap .dropdown-item:hover .dropdown-item__title {
+          color: #fff; }
+
+.mobile-wallet h2, .mobile-wallet .description {
+  text-align: center; }
+
+.mobile-wallet__content {
+  margin: 30px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.mobile-wallet__box {
+  max-width: 190px;
+  width: 100%;
+  margin: 0 0 20px; }
+  .mobile-wallet__box h3 {
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0 0 20px;
+    text-align: center; }
+
+.list-dots {
+  list-style: disc;
+  padding: 0 0 0 20px; }
+  .list-dots li {
+    margin: 0 0 5px; }
+    .list-dots li:last-child {
+      margin: 0; }
+
+.pagination {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .pagination li {
+    margin: 0 10px 0 0; }
+    .pagination li:last-child {
+      margin: 0; }
+    .pagination li a {
+      font-size: 17px;
+      font-weight: 500;
+      color: #4e79ff;
+      width: 30px;
+      height: 30px;
+      border-radius: 2px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      text-align: center; }
+      .pagination li a:hover {
+        background: #4e79ff;
+        color: #fff; }
+    .pagination li .active {
+      color: #fff;
+      background: #4e79ff; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -2262,7 +2354,40 @@ header.color-white .navbar-toggler span {
     min-width: 20px;
     margin: 0 15px 0 0; }
   .custom-select {
-    width: 220px; } }
+    width: 220px; }
+  .btn-close-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 1px solid #000;
+      border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 0 0 10px auto;
+    position: relative; }
+    .btn-close-menu span {
+      border-radius: 2px;
+      width: 15px;
+      height: 1px;
+      display: inline-block;
+      background: #000;
+      position: absolute; }
+      .btn-close-menu span:first-child {
+        -webkit-transform: rotate(135deg);
+                transform: rotate(135deg);
+        top: 13px;
+        left: 6px; }
+      .btn-close-menu span:last-child {
+        -webkit-transform: rotate(40deg);
+                transform: rotate(40deg);
+        top: 13px;
+        right: 6px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 585px) {
@@ -2368,4 +2493,6 @@ header.color-white .navbar-toggler span {
         -ms-flex-pack: center;
             justify-content: center; }
   .modal-content {
-    padding: 30px 10px; } }
+    padding: 30px 10px; }
+  .mobile-wallet__box {
+    max-width: none; } }
