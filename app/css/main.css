@@ -2109,6 +2109,45 @@ header.color-white .navbar-toggler span {
       -ms-flex-pack: center;
           justify-content: center; }
 
+.exchanges {
+  padding: 50px 0 30px; }
+  .exchanges .description {
+    margin: 0 auto 50px; }
+
+.exchanges-box__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 170px;
+  height: 100px;
+  border-radius: 5px;
+  background-color: #4e79ff;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px; }
+
+.exchanges-box__img {
+  margin: 50px 0 25px; }
+
+.exchanges-box {
+  width: 170px; }
+  .exchanges-box .links {
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: 500; }
+
 /*==========  Desktop First  ==========*/
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1070px) {
@@ -2252,7 +2291,9 @@ header.color-white .navbar-toggler span {
     font-size: 16px; }
   .nav-pills {
     -ms-flex-pack: distribute;
-        justify-content: space-around; } }
+        justify-content: space-around; }
+  .exchanges-box {
+    margin: 0 auto; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
@@ -2595,7 +2636,18 @@ header.color-white .navbar-toggler span {
     font-size: 16px;
     margin: 20px 0 0 0; }
   .contacts-links:last-child {
-    margin: 0 0 29px; } }
+    margin: 0 0 29px; }
+  .exchanges-box {
+    margin: 0 auto 30px; }
+    .exchanges-box .links {
+      font-size: 16px;
+      line-height: normal; }
+  .exchanges-box__img {
+    margin: 20px 0 10px; }
+  .exchanges-box__price {
+    font-size: 16px;
+    line-height: normal;
+    width: 100%; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 585px) {
@@ -2736,4 +2788,8 @@ header.color-white .navbar-toggler span {
       height: 30px;
       margin: 0 0 10px; }
   .contacts-links {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .exchanges-box {
+    width: 100%; }
+  .exchanges .description {
+    margin: 0 auto 30px; } }
